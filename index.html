@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/thema10.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('recursos/imagenes/futfe.jpg','recursos/imagenes/fut1.jpg','recursos/imagenes/basquet1.jpg','recursos/imagenes/karate1.jpg','recursos/imagenes/color.jpg','recursos/imagenes/danza2.jpg','recursos/imagenes/9.jpg')">
+<div data-role="page" id="Principal" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Centro de Bachillerato Tecnológico Industrial y de Servicios No 016 </h1>
+   </div>
+   <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Ubicacion del plantel</h1>
+        <P>Director: Ramos Bravo Anselmo</P>
+<P>CCT: 21DCT0046P</P>
+<P>Tel.: (244) 4462940</P>
+<P>Dirección: Fracc. Ricardo Flores Magon Domicilio Conocido S/N. Atlixco, Puebla. CP 74240</P>
+<P>Correo Electrónico: cbtis016.dir@dgeti.sems.gob.mx</P>
+   <div>
+       <img src="res/android/mapa.png" width="80%" />
+    </div>
+    </div>   
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>lo que se quiere lograr...</h1>
+         <div>
+ 
+         <p><center><strong>MISIÓN:</center></strong>
+Formar personas con conocimientos tecnológicos en las áreas industrial, comercial y de servicios, a través de la preparación de profesionales técnicos y bachilleres, con el fin de contribuir al desarrollo sustentable del país.
+</p>
+<br>   
+ </div>
+         <div>
+ 
+          <p><center><strong>VISIÓN:</center></strong>
+Ser una institución que proporcione una formación integral y pertinente de acuerdo a las exigencias derivadas de la competitividad mundial y el entorno y vocación local, además de tener la flexibilidad para satisfacer los intereses, aspiraciones y posibilidades de la población que demanda este nivel educativo en nuestro plantel.
+</p>
+          <p><img src="recursos/imagenes/7.jpg" width="876" height="432" align="bottom"></p>
+
+<br>
+
+
+         
+         </div>
+         <div></div>
+         
+        
+        
+        
+        </div>
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Calendario del ciclo Escolar 2015-2016</h1>
+         <div>
+         
+         <p><strong>ciclo escolar 2015-2016</strong></p>
+         <br>
+         </div>
+         <div>
+         <img src="recursos/imagenes/calendario.png" width="100%" height="80%"/>
+         </div>
+         
+         
+</div>
+<br>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','recursos/imagenes/9.jpg',1)"><img src="recursos/imagenes/7.jpg" width="763" height="234" id="Image21" align="middle"></a>
+<div>
+  <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-c">
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Oferta Educativa</h2>
+    <p>muestra informacion sobre las carreras que existen</p>
+    
+     </a>
+    </li>
+   
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>instalaciones</h2>
+      <p>muestra informacion sobre las instalaciones</p>
+      </a>
+    </li>
+   
+   <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Requisitos para Nuevo Ingreso</h2>
+    <p>muestra requisitos para solicitar fichas</p>
+      </a>
+    </li>
+    
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Galeria</h2>
+    <p>imagenes sobre la institucion</p>
+      </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Elavorado por...</h2>
+    <p>informacion sobre el diseñador de la app</p>
+      </a>
+    </li>
+  </ul>
+</div>
+
+</div>
+  <div data-role="footer" align="center" data-theme="a">
+  <div>
+    <img src="res/android/mdpi.png" width="46" height="46" />
+    </div>
+    <div>
+    <h4>"Estudiar en un Bachillerato Tecnologico te abre posibilidades"</h4>
+    <h4>Karla Rosales Rosales.</h4>
+  </div>
+  </div>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+    <h1>Carreras Tecnicas</h1>
+     
+    </div>
+   <div data-role="content" align="center">
+    <div>
+     <h2>¿No sabes que estudiar?</h2>
+     <p>
+     En "CBTis 16" contamos con 4 ESPECIALIDADES diferentes
+     
+     
+     <div data-role="collapsible" data-content-theme="false">
+        <h1>ADMINISTRACIÓN DE RECURSOS HUMANOS</h1>
+        <P>Elabora y gestiona documentación administrativa referente a recursos humanos, integra al personal a la organización, asiste en actividades de capacitación, desarrollo y evaluación del personal, así como determina las remuneraciones al personal.</p>
+
+<p>COMPETENCIAS PROFESIONALES</P>
+   <div>
+       <img src="recursos/imagenes/competencias.png" width="100%" height="80%"/>
+    </div>
+    <p>MAPA CURRICULAR</p>
+    <div>
+       <img src="recursos/imagenes/curricular.png" width="100%" height="80%"/>
+    </div>
+    <h2>PERFIL DE EGRESO</h2>
+    <p> Durante el proceso de formación de los cinco módulos, el estudiante desarrollará o reforzará las siguientes competencias profesionales, correspondientes al Técnico en Administración de Recursos Humanos:
+
+ Elabora y gestiona la información de la organización.
+ Integra el capital humano a la organización.
+ Asiste en el control y evaluación del desempeño del capital humano de la organización.
+ Controla los procesos y servicios de higiene y seguridad del capital humano en la organización.
+ Determina las remuneraciones al capital humano de la organización.
+OPORTUNIDADES DE INSERCIÓN LABORAL.
+
+Auxiliar de información interna y externa. Auxiliar de control de personal. Asistente de gerente de recursos humanos. Auxiliar de personal. Servicios de administración de negocios, servicios de traducción e interpretación.</p>
+    </div>   
+    
+    
+    <div data-role="collapsible" data-content-theme="false">
+        <h1>TÉCNICO EN PROGRAMACIÓN</h1>
+        <P>Persona con conocimientos, habilidades y actitudes, capaz de ingresar a empresas de desarrollo de software, diseño gráfico, mantenimiento, outsourcing.</P>
+<P>COMPETENCIAS PROFESIONALES</P>
+<div>
+       <img src="recursos/imagenes/competencias1.png" width="100%" height="80%"/>
+    </div>
+<P>MAPA CURRICULAR</P>
+<div>
+       <img src="recursos/imagenes/curricular1.png" width="100%" height="80%"/>
+    </div>
+    <h1>PERFIL DE EGRESO</h1>
+<P>La formación que ofrece la carrera de Técnico en programación permite al egresado, a través de la articulación de saberes de diversos campos, realizar actividades dirigidas a la:
+
+Instalación y desarrollo de software de aplicación utilizando programación estructurada y orientada a objetos en ambientes web y móviles, con almacenamiento persistente de datos.
+ Así como la configuración y administración de plataforma e-learning y Comercio electrónico.</P>
+ <h1>OPORTUNIDADES DE INSERCIÓN LABORAL.</h1>
+<P>Desarrolladores de software
+ Analistas de sistemas
+Analista de programas de cómputo
+ Programador de sistemas de cómputo
+ Edición de software y edición de software integrada con la reproducción
+ Escuelas de computación del sector privado
+ Servicios de diseño de sistemas de cómputo y servicios relacionados
+ Escuelas de computación del sector público</P>
+
+    </div>   
+    
+    
+    <div data-role="collapsible" data-content-theme="false">
+        <h1>TÉCNICO EN ELECTRICIDAD</h1>
+        <P>La carrera de Técnico en Electricidad permite al estudiante sustentar la demanda de ocupación de Técnicos Electricistas en el sector productivo y de servicios, capaz de diseñar y realizar instalaciones eléctricas residenciales y comerciales, así como proporcionar mantenimiento a máquinas eléctricas.</P>
+<P>COMPETENCIAS PROFESIONALES
+</P>
+ <img src="recursos/imagenes/competencias2.png" width="100%" height="80%"/>
+<P>MAPA CURRICULAR</P>
+<img src="recursos/imagenes/curricular2.png" width="100%" height="80%"/>
+
+<h1>PERFIL DE EGRESO</h1>
+<P>Durante el proceso de formación de los cinco módulos, el estudiante desarrollará o reforzará las siguientes competencias profesionales, correspondientes al Técnico en Electricidad.
+
+ Desarrolla instalaciones eléctricas residenciales y comerciales.
+ Mantiene los motores y generadores de CA y CC.
+ Mantiene en operación los circuitos de control electromagnético y electrónico.
+ Mantiene los sistemas de iluminación y de energía renovable.
+ Mantiene instalaciones eléctricas de media y baja tensión.</P>
+ <h1>OPORTUNIDADES DE INSERCIÓN LABORAL.</h1>
+<P>Todas estas competencias posibilitan al egresado su incorporación al mundo laboral o desarrollar procesos productivos independientes, de acuerdo con sus intereses profesionales o las necesidades en su entorno social.</P>
+    </div>   
+    
+    
+     <div data-role="collapsible" data-content-theme="false">
+        <h1>TÉCNICO EN MECÁNICA INDUSTRIAL</h1>
+        <P>Profesionista que da mantenimiento a los sistemas de transmisión de potencia utilizando las máquinas herramientas convencionales, de control numérico, máquinas de soldar con arco eléctrico y oxigas auxiliándose de los procesos de ajuste de piezas mecánicas..</P>
+<P>COMPETENCIAS PROFESIONALES</P>
+<div>
+       <img src="recursos/imagenes/competencias3.png" width="100%" height="80%"/>
+    </div>
+<P>MAPA CURRICULAR</P>
+<div>
+       <img src="recursos/imagenes/curricular3.png" width="100%" height="80%"/>
+    </div>
+    <h1>PERFIL DE EGRESO</h1>
+<P>Durante el proceso de formación de los cinco módulos, el estudiante desarrollará o reforzará las siguientes competencias profesionales, correspondientes al Técnico en Mecánica Industrial:
+
+ Suelda y ajusta piezas mecánicas.
+ Maquina piezas mecánicas en talador y torno.
+ Maquina piezas mecánicas en fresadora, rectificadora y cepillo.
+ Maquina piezas mecánicas por CNC.
+ Mantiene sistemas de transmisión de potencia.</P>
+ 
+ <h1>OPORTUNIDADES DE INSERCIÓN LABORAL.</h1>
+<P>Industrias de transformación y procesos como: Textiles, del plástico, petroleras, metalmecánica, automotriz, pesqueras, mineras, siderúrgicas, agrícolas, alimenticia, química, de muebles, forestal, papelera, gráfica y en general todo tipo de industria de la producción y manufacturera que utilice maquinaria entre otras.
+
+ </P>
+
+    </div>   
+    
+     
+     </p>
+    </div>
+    </div>
+   <div data-role="footer" data-theme="a">
+     <h4>App 11, Karla rosales rosales</h4>
+   </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+    <h1>Espacios que ofrecemos</h1>
+    </div>
+    
+   <div data-role="content" align="center">
+    <div>
+    <h2>&quot;Instalaciones&quot;</h2>
+    <ul>
+      <li>
+        <div align="justify">Aulas
+          
+          
+        </div>
+      </li>
+      <li>
+        <div align="justify">Laboratorio de Quimica
+          
+          
+        </div>
+      </li>
+      <li>
+        <div align="justify">Laboratorio de Logistica
+          
+          
+        </div>
+      </li>
+      <li>
+        <div align="justify">Laboratorio de Fisica
+          
+          
+        </div>
+      </li>
+      <li>
+        <div align="justify">Laboratorio de computo (lc1,lc2,lc3,lc4)
+          
+          
+        </div>
+      </li>
+      <li>
+        <div align="justify">Laboratorio de Ingles
+          
+          
+        </div>
+      </li>
+      <li>
+        <div align="justify">Taller de programacion
+          
+          
+        </div>
+      </li>
+      <li>
+        <div align="justify">Taller de automatizacion
+          
+          
+        </div>
+      </li>
+      <li>
+        <div align="justify">Biblioteca con equipo de computo con servicio a internet
+          
+          
+        </div>
+      </li>
+      <li>
+        <div align="justify">Edificio de oficinas administrativas
+        </div>
+      </li>
+    </ul>
+    <P>&nbsp;</P>
+     <p>&nbsp;</p>
+    </div>
+    
+    <h2>Espacios Deportivos</h2>
+     <div data-role="collapsible" data-content-theme="false">
+       <h1>FUTBOL</h1>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','recursos/imagenes/futfe.jpg',1)"><img src="recursos/imagenes/futbol.jpg" width="381" height="328" id="Image23" align="bottom"></a> 
+     
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','recursos/imagenes/fut1.jpg',1)"><img src="recursos/imagenes/fut.jpg" width="448" height="323" id="Image24"></a>
+     </div>
+     
+     
+
+    
+    
+  <div data-role="collapsible" data-content-theme="false">
+      <h1>VOLEIBOL</h1>
+    <img src="recursos/imagenes/bolifem.jpg" width="567" height="540"> </div>
+     
+     
+
+    
+     <div data-role="collapsible" data-content-theme="false">
+       <h1>BASQUETBOL</h1>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','recursos/imagenes/basquet1.jpg',1)"><img src="recursos/imagenes/basquetfe.jpg" width="477" height="540" id="Image22"></a> </div>
+   
+
+    <h2>CULTURALES</h2>
+     <div data-role="collapsible" data-content-theme="false">
+       <h1>Banda de Guerra</h1>
+     <img src="recursos/imagenes/guerra.jpg" width="589" height="681"> </div>
+     
+     
+
+    
+    
+  <div data-role="collapsible" data-content-theme="false">
+      <h1>Karate</h1>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','recursos/imagenes/karate1.jpg',1)"><img src="recursos/imagenes/karate.jpg" width="577" height="618" id="Image25"></a></div>
+      
+<div data-role="collapsible" data-content-theme="false">
+  <h1>Color Guards</h1>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','recursos/imagenes/color.jpg',1)"><img src="recursos/imagenes/color guards.jpg" width="653" height="679" id="Image"></a> </div>
+  
+  <div data-role="collapsible" data-content-theme="false">
+  <h1>Danza</h1>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','recursos/imagenes/danza2.jpg',1)"><img src="recursos/imagenes/danza1.jpg" width="625" height="701" id="Image26"></a></div>
+   </div>
+
+    
+<div data-role="footer" data-theme="a">
+     <h4>App11, Karla rosales rosales</h4>
+   </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">REQUISITOS</div>
+  <div data-role="content" align="center">
+    <div>
+     <h1>REQUISITOS PARA SOLICITAR FICHA</h1>
+     <ol>
+       <li>
+         <div align="center"><em>Constancia de estudios de ser alumnos regulares de 3er año de secundario.</em>         </div>
+       </li>
+       <li>
+         <div align="center"><em>una copia de acta de nacimiento. </em>         </div>
+       </li>
+       <li>
+         <div align="center"><em>una copia CURP(ampliacion T.carta).</em>         </div>
+       </li>
+       <li>
+         <div align="center"><em>Dos fotografias tamaño infantil.</em>         </div>
+       </li>
+       <li>
+         <div align="center"><em>Copia del IFE del padre o tutor. </em>         </div>
+       </li>
+      </ol>
+     <h3 align="center"><em>REQUISITOS DE ASPIRANTES</em> </h3>
+     <ol>
+       <li>febrero 2 al 23 de junio del 2016</li>
+     </ol>
+      <h3><em>Curso de nivelacion</em></h3>
+      <p>7 sabados apartir del 7 de mayo al 18 de junio del 2016 en area de Matematicas y Lectura</p>
+      <h3>Examen de admision</h3>
+      <p>24 de junio de 2016 a las 7:30 am</p>
+      <h2>Requisitos de inscripcion</h2>
+      <ul>
+        <li>llenar solicitud de inscripcion.</li>
+        <li>firmar carta de compromiso.</li>
+        <li>certificado de secundaria,original y 2 copias.</li>
+        <li>C.U.R.P. 2copias.</li>
+        <li>comprobante de domicilio 2 copias</li>
+        <li>6 fotografias tamaño infantil.Blanco y negro (no instantaneas)</li>
+        <li></li>
+      </ul>
+      <p>&nbsp;</p>
+      <ol>
+        <ol>
+        </ol>
+     </ol>
+     
+     <ol>
+       <ol>
+        </ol>
+   </ol>
+    </div>
+  </div>
+   <div data-role="footer" data-theme="a">
+     <h4>App11, Karla rosales rosales</h4>
+  </div>
+</div>
+</div>
+
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+    <h1>Galeria</h1>
+    </div>
+   <div data-role="content" align="center">
+    <div>
+     <h2>imagenes sobre el plantel</h2>
+     
+
+<!-- Start WOWSlider.com -->
+<iframe src="visorwowslider.html" style="width:1038px;height:768px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+
+
+    </div>
+   </div>
+ <div data-role="footer" data-theme="a">
+     <h4>App11, Karla rosales rosales</h4>
+   </div>
+   </div>
+   
+   <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+    <h1>Elavorado por...</h1>
+    </div>
+<div data-role="content" align="center">
+    <div>
+     <h2>Informacion del diseñador </h2>
+     <h3>Nombre:</h3>
+     <p>Karla rosales rosales.</p>
+     <h3>Grado:</h3><P> 4 </P><h3>Grupo:</h3><P>E.</P>
+     <h3>Especialidad:</h3>
+     <p>Tecnico en Programacion.</p>
+     <h3>Materia:</h3>
+     <p>DAM(diseña aplicaciones moviles)</p>
+     <h3>Maestro:</h3>
+     <p>Jose Antonio Gomez.</p>
+     <p>&nbsp;</p>
+    </div>
+   </div>
+<div data-role="footer" data-theme="a">
+     <h4>App11, Karla rosales rosales</h4>
+   </div>
+
+
+</body>
+</html>
